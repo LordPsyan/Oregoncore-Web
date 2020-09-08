@@ -1,0 +1,24 @@
+
+
+/* Popup box */
+#popup { position: absolute;  width: 560px; z-index: 99; display:none;}
+#popup_title { position: relative;  height: 43px; background-image: url(images/topBar.png); background-repeat:no-repeat; padding-top: 9px; padding-left: 10px; font-size: 15px; }
+#popup_body { positon: relative;  min-height: 40px;  background-color:#1E1E1E; padding-left: 10px;
+padding-bottom: 5px; padding-right: 10px; margin-top: -1px; text-align: center; }
+#popup_bottom { position: relative; width: 560px; height: 66px; background-image: url(images/botBar.png); background-repeat:no-repeat;  }
+#popup_close { position: absolute; top: 9px; right: 10px; height: 17px; width: 17px; background-image:url(images/close.png); background-repeat:no-repeat; cursor:pointer; opacity: 0.7; }
+#popup_close:hover { opacity: 1; }
+
+#popup input[type="button"] { height: 36px; background-image:url(images/popupCloseBtn.png); background-repeat:repeat-x;
+color: #999; border: 1px solid #3A3A3A; text-shadow: none; opacity: 0.95;  }
+#popup input[type="button"]:hover { opacity: 1; border: 1px solid #5A5A5A; }
+
+#popup_close_button { height: 36px; background-image:url(images/popupCloseBtn.png); background-repeat:repeat-x;
+color: #999; border: 1px solid #3A3A3A; text-shadow: none; opacity: 0.95; }
+#popup_close_button:hover { opacity: 1; border: 1px solid #5A5A5A;}
+
+/* RAF styling */
+#raf_box { width: 645px; height: 14px; border: 1px solid #333; background-color: #181818; color: #777;
+padding: 6px; padding-top: 8px; }
+#raf_box:hover { padding: 8px; border: 1px solid #FFD31C; }
+

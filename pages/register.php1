@@ -1,0 +1,285 @@
+<link rel="stylesheet" href="https://sunwell.pl/css/jquery-ui.min.css">
+<link href="https://sunwell.pl/css/app.css?ver=0.9a13c31xda" rel="stylesheet">
+<link href="https://sunwell.pl/css/custom.css?ver=0.92b2oc" rel="stylesheet">
+<link href="https://sunwell.pl/css/perfect-scrollbar.css" rel="stylesheet">
+<?php 
+account::isLoggedIn();
+if ($_POST['register']) {
+	account::register($_POST['username'],$_POST['email'],$_POST['password'],$_POST['password_repeat'],$_POST['referer'],$_POST['captcha']);
+} 
+?>
+
+<body class="">
+<div class="login-background">
+<video autoplay muted loop playsinline poster="https://wallpaperplay.com/walls/full/8/d/0/193032.jpg" class="login-background-video">
+</video>
+</div>
+<div style="margin: 0 auto; text-align: center; padding: 70px 0 0px 0;"><img src="http://host.mp3-share.info/logo.png" style="width: 80px;" /></div>
+<div style="margin: 0 auto; text-align: center; padding: 0 0px 0; color: #1d689f;"><font  size="12"><b>ＮＥＦＥＬＩＮ-ＷＯＷ</b></font></div>
+
+<div class="alert alert-dismissible text-center cookiealert" role="alert">
+<div class="cookiealert-container">
+General Data Protection Regulation (EU) 2016/679 has gone into life by May 25th, 2018. <br />
+That's why we need your consent to process your personal data that you share within our services. <br />
+You'll find details about it below. In case you don't agree on that, you cannot use the website. <button type="button" class="btn btn--sm btn--yellow" data-toggle="modal" data-target="#privacypolicy">Learn More</button>
+<br /><br />
+<a type="button" class="btn btn-danger btn-sm noacceptcookies" style="text-decoration: none;" href="https://www.google.pl">
+I don't agree </a>
+<button type="button" class="btn btn-success btn-sm acceptcookies" style="text-decoration: none;" aria-label="Close">
+I agree </button>
+</div>
+</div>
+
+<div id="privacypolicy" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content" style="background-color: #080706; background-image: linear-gradient(to top, rgba(251, 159, 104, 0.1) 0px, rgba(251, 159, 104, 0) 50%); border: 1px solid #553f31;">
+<div class="modal-header" style="border: none;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">Privaty Policy</h4>
+</div>
+<div class="modal-body">
+<div class=WordSection1>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>General Data Protection
+Regulation (EU) 2016/679 has gone into life by May 25th, 2018. That's why we
+need your consent to process your personal data that you share within our
+services. You'll find details about it below. In case you don't agree on that, you
+cannot use the website.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>What kind of data are we
+going to process?</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>We process data that you
+give us or leave in the context of using the services and functions of websites
+from our portfolio. If you want to use the website functions along with the forums,
+you need to create an account which is going to use your e-mail address. The
+second type of data to process is cookies: you leave them by filling the forms,
+such as account registration. They allow you to use the websites easier (saving
+passowrds for example). The last type of data that we process is all your data
+uploaded within our services (website/forums). In this case our processing is
+only about sharing virtual space which you use to upload the data.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>Why are you going to
+process the data?</span></b></p>
+<p class=priv_rules style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt;line-height:normal'><span style='font-family:"Open Sans",sans-serif;
+color:#b9b9b9'>•<span style='font:7.0pt "Open Sans"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>statistical
+measurements - information about the users are valuable in context of
+possibility to perform data analysis.</span></p>
+<p class=priv_rules style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt;line-height:normal'><span style='font-family:"Open Sans",sans-serif;
+color:#b9b9b9'>•<span style='font:7.0pt "Open Sans"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>marketing
+activities - in case of important events associated with our websites we want
+our users to be informed about them. Advertisments can be shown within social
+media and mailing campaigns.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>Who is the administrator
+of the personal data?</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>The administrator of the
+personal data is IRNet company.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'> </span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>Who can you provide the
+data to?</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>According to the law, it
+might be entities that process data on request, for example marketing
+companies, adverts, service subcontractors. Your data can be also given to
+legal organs considering we receive appropriate legal basis.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>What are my rights in
+context of my data?</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>You have right to delete
+your account in any moment, and with the account: all the data that we ever
+held on our servers. It means that when you delete your account, it will not be
+possible to restore it.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>Do I need to give you my
+data?</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>Providing us with your
+personal data is volunatry, however not providing the data necessary for
+providing the services for you will make these services unusable. You cannot
+create an account without an e-mail address. </span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>What are my rights in
+context of processing my personal data?</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>You have the following
+rights:</span></p>
+<p class=priv_rules style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt;line-height:normal'><span style='font-family:"Open Sans",sans-serif;
+color:#b9b9b9'>•<span style='font:7.0pt "Open Sans"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>right
+to access to all your data and to download a copy of all your data;</span></p>
+<p class=priv_rules style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt;line-height:normal'><span style='font-family:"Open Sans",sans-serif;
+color:#b9b9b9'>•<span style='font:7.0pt "Open Sans"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>right
+to delete all your data;</span></p>
+<p class=priv_rules style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt;line-height:normal'><span style='font-family:"Open Sans",sans-serif;
+color:#b9b9b9'>•<span style='font:7.0pt "Open Sans"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>right
+to lodge a complaint to a supervisory body that is dealing with personal data
+protection.</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><b><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>If your data is being
+processed as you have agreed to, you can additionally take advantage of the
+following rights:</span></b></p>
+<p class=priv_rules style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;line-height:normal'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>Right to withdraw of
+consent in the scope which the data is processed. Withdrawal of consent doesn't
+affect compatibility with rights to process which was done due to the consent
+before its withdrawal.</span></p>
+<p class=priv_rules style='text-align:justify;text-justify:inter-ideograph'><span style='font-family:"Open Sans",sans-serif;color:#b9b9b9'>&nbsp;</span></p>
+<p class=priv_rules><span style='color:#b9b9b9'>&nbsp;</span></p>
+</div>
+</div>
+<div class="modal-footer" style="border: none;">
+<button type="button" class="btn btn--sm btn--yellow" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="content" style="margin: 50px auto -100px auto; max-width: 440px; text-align: center;">
+<div class="box hidden-xs">
+<div class="box__content">
+<div>
+<a style="opacity: 0.4; padding: 10px;  " href="/lang/pl"><img src="https://sunwell.pl/images/lang/pl.png" alt="Polski" style="width: 40px; height: 40px;" /></a>
+<a style="opacity: 0.4; padding: 10px;  opacity: 1;  " href="/lang/en"><img src="https://sunwell.pl/images/lang/en.png" alt="English" style="width: 40px; height: 40px;" /></a>
+</div>
+</div>
+</div>
+</div>
+<div id="site-wrapp">
+<div class="content" style="padding: 50px 0; margin: 0 auto 0 auto; max-width: 820px;">
+<div class="row">
+<div class="box register_account col-lg-6">
+<div class="box__header">
+<span class="box__header__title"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Register account</span>
+</div>
+<div class="box__content">
+<p class="text-center">Activation e-mail will be sent to your e-mail address after completing the registration. It may take up to 30 minutes. <br /><strong>(Be sure to check your Spam folder.)</strong></p>
+<input type="hidden" value="<?php echo $_GET['id']; ?>" id="referer" />
+
+
+<table width="100%">
+        <tr>
+             <td align="right">Username:</td> 
+             <td><input type="text" id="username" value="<?php echo $_POST['username']; ?>" onkeyup="checkUsername()"/>
+             <br/><span id="username_check" style="display:none;"></span></td>
+        </tr>
+		<br/><br/><br/>
+        <tr>
+             <td align="right">Email:</td> 
+             <td><input type="text"  id="email" value="<?php echo $_POST['email']; ?>"/></td>
+        </tr>
+         <tr>
+             <td align="right">Password:</td> 
+             <td><input type="password"  id="password" /></td>
+        </tr>
+        <tr>
+             <td align="right">Repeat password:</td> 
+             <td><input type="password"  id="password_repeat" /></td>
+        </tr>
+        <?php
+		if($GLOBALS['registration']['captcha']==TRUE) { 
+			$_SESSION['captcha_numero']= rand(0000,9999);
+		?>
+			<tr>
+                <td align="right"></td>
+                <td><img src="includes/misc/captcha.php" /></td>
+            </tr>
+            <tr> 
+                <td align="right">Captcha:</td>
+                <td><input type="text" id="captcha" /></td>
+            </tr>
+		<?php }
+		?>
+       
+            <td></td>
+            <td>
+			
+		<br/><br/>
+<div class="form-group row">
+<label for="register_submit" class="col-lg-4 col-form-label"></label>
+<div class="col-lg-8">
+<input type="submit" class="btn btn--sm btn--yellow" value="Create account" onclick="register(<?php if($GLOBALS['registration']['captcha']==TRUE)  echo 1;  else  echo 0; ?>)" id="register"/>
+</div>
+</div>
+			
+          		 
+            <?php 
+			include("documents/termsofservice.php"); 
+			if($tos_enable == true)
+			{
+			?>
+            <br/>By registering, you accept our <a href="#" onclick="viewTos()">Terms of Service</a>
+            <?php } ?>
+        </tr>
+ </table>
+
+ 
+</div>
+</div>
+<div class="col-lg-6">
+<img src="https://sunwell.pl/images/register_info_tbc.jpg" style=" width: 391px; " />
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="sun_loader">
+<img class="sun_heart" src="http://host.mp3-share.info/logo.png" style="width: 80px; position: absolute; left: 50%; top: 50%; z-index: 2;" />
+<div style="margin: 0 auto; text-align: center; padding: 500px 0px 0px; color: #1d689f;"><font  size="12"><b>ＮＥＦＥＬＩＮ-ＷＯＷ</b></font></div>
+</div>
+
+<script type="3c44a41d800c3c3ab9f39a17-text/javascript">
+            $(window).load(function() {
+            $(".sun_loader").fadeOut("slow");
+        });
+        </script>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/cb7744ae/cloudflare-static/rocket-loader.min.js" data-cf-settings="3c44a41d800c3c3ab9f39a17-|49" defer=""></script>
+
+
+  <script type="text/javascript">
+ 	document.onkeydown = function(event) 
+	{
+		var key_press = String.fromCharCode(event.keyCode);
+		var key_code = event.keyCode;
+		if(key_code == 13)
+			{
+				register(<?php if($GLOBALS['registration']['captcha']==TRUE)  echo 1;  else  echo 0; ?>)
+			}
+	}
+ </script>
