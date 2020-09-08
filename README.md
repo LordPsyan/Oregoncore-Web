@@ -33,4 +33,4 @@ You can change everything from admin panel to how much it costs.
 Currently only TrinityCore is supported and Oregoncore needs to be modified to support it；
 PHP version requirements: 5.6
 
-preview：
+preview：![image](https://github.com/yuanf225/Oregoncore-Web/blob/master/preview.jpg)
